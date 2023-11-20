@@ -1,0 +1,239 @@
+* {margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.header{
+    background-color: rgb(255, 211, 211);
+    height: 4rem;
+}
+.logga{
+    max-width: 4rem;
+}
+.nav-logo {
+ padding-left: 2rem;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.hamburger {
+    display: none;
+    margin-top: 20px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #313131;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 4rem;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #888888;
+}
+
+
+
+main img {
+    width: 100%;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.6rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.start{
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+
+.container{
+    display: inline-block;
+  }
+
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    animation: 
+      typing 1s forwards;
+    font-size: 2rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.utbildning{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    gap: 4rem;
+}
+.utbildning img{
+    max-width: 300px;
+}
+.utbildning div{
+    max-width: 500px;
+}
+.utbildning div h2{
+    padding-bottom: 1rem;
+}
+.bild{
+    flex-shrink: 0;
+}
+.bild img{ 
+    max-width: 270px;
+}
+.bild img{
+    position: relative;
+}
+.innan{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 4rem;   
+}
+
+.innan img {
+    max-width: 300px;
+}
+.innan div{
+    max-width: 500px;
+}
+@media only screen and (max-width: 950px){
+    .utbildning{
+        padding: 4rem;}
+    .innan{
+        padding: 4rem;
+    }
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.colektiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    gap: 2rem;
+}
+.sekton1{
+    padding: 0px;
+}
+.sekton2{
+    padding: 0px;
+}
+.sekton3{
+    padding: 0px;
+}
+.text{
+    max-width: 300px;
+}
+.text p{
+   margin-top: 1rem;
+}
+.text h2{
+    margin-top: 1rem;
+}
+.knapp{
+    text-align: center;
+   border-radius: 15px;
+    border-style: solid;
+    width: 90px;
+    height: 24px; 
+    margin-top: 22px;  
+    background-color: rgb(0, 78, 52); 
+    opacity: 0.6;
+  transition: 0.3s;
+}
+.knapp:hover {opacity: 1}
+
+.knapp a{
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 768px){
+    .colektiv{
+        flex-direction: column;
+    }
+ 
+    
+}
